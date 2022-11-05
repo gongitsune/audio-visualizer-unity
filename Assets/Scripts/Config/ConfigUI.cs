@@ -25,6 +25,8 @@ namespace Config
             sensitivity,
             numOfParticle;
 
+        [SerializeField] private Image panel;
+
         private readonly Subject<Unit> _onUpdate = new();
 
         private float _colorSpeed,
@@ -38,7 +40,6 @@ namespace Config
             _numOfParticle;
 
         private GameInput _input;
-        [SerializeField] private Image panel;
 
         private RemoteConfigManager.RemoteSetting _remote;
         public IObservable<Unit> OnUpdate => _onUpdate;
@@ -67,7 +68,7 @@ namespace Config
         {
             _input = new GameInput();
             _input.UI.Enable();
-            
+
             var manager = RemoteConfigManager.Instance;
             _remote = manager.Setting;
             manager.OnUpdate.Subscribe(_ =>
@@ -86,6 +87,19 @@ namespace Config
 
                 _onUpdate.OnNext(Unit.Default);
             }).AddTo(this);
+            useRemote.onValueChanged.AddListener(v =>
+            {
+                if (v) return;
+                _colorSpeed = (float)Convert.ToDouble(colorSpeed.text);
+                _saturation = (float)Convert.ToDouble(saturation.text);
+                _brightness = (float)Convert.ToDouble(brightness.text);
+                _minSize = (float)Convert.ToDouble(minSize.text);
+                _maxSize = (float)Convert.ToDouble(maxSize.text);
+                _minAmplitude = (float)Convert.ToDouble(minAmplitude.text);
+                _maxAmplitude = (float)Convert.ToDouble(maxAmplitude.text);
+                _sensitivity = (float)Convert.ToDouble(sensitivity.text);
+                _numOfParticle = (float)Convert.ToDouble(numOfParticle.text);
+            });
 
             _input.UI.Config.started += ToggleConfigUI;
 
