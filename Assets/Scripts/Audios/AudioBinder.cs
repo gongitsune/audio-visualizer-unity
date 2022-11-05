@@ -15,7 +15,7 @@ namespace Audios
         [SerializeField] private VisualEffect effect;
         private Vector4VfxProp _colorProp;
         private ConfigUI _conf;
-        private float _currentHue, _lowElapsed;
+        private float _currentHue;
 
         private Rigidbody _effectRigid;
         private FloatVfxProp _sizeProp, _amplitudeProp, _numOfParticle;
@@ -59,21 +59,6 @@ namespace Audios
             if (_currentHue > 1) _currentHue = 0;
             var color = Color.HSVToRGB(_currentHue, _conf.Saturation, _conf.Brightness);
             _colorProp.Value = new Vector4(color.r, color.g, color.b, 1);
-
-            if (baseLevel < 0.1f)
-            {
-                _lowElapsed += Time.deltaTime;
-                if (_lowElapsed < 0.2f) return;
-                _lowElapsed = 0;
-                levelTrackerBase.ResetAutoGain();
-                levelTrackerHigh.ResetAutoGain();
-                levelTrackerMid.ResetAutoGain();
-                levelTrackerLow.ResetAutoGain();
-            }
-            else
-            {
-                _lowElapsed = 0;
-            }
         }
     }
 }
