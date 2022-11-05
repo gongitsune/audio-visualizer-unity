@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b6fac5d3-095d-401e-953f-a989efd41656\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ColorSpeed\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 0.1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"df18ce00-c09d-48f4-a191-1926b9e428d9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Saturation\",\r\n      \"type\": \"float\",\r\n      \"value\": 1.0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"82683310-7e0b-4995-b99c-f8f214548ed7\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Brightness\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 25.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"97fbc548-c65f-4fe4-a680-49b6b1633775\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"MinSize\",\r\n      \"type\": \"float\",\r\n      \"value\": 0.5\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"ca53ba52-122a-4d64-8ed6-c05ad7632023\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"MaxSize\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"d1638e6d-c2c7-4810-8946-0661f9af4134\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"MinAmplitude\",\r\n      \"type\": \"float\",\r\n      \"value\":
+    0.8\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"96e24794-d30c-4ca6-98a2-2f420d6ec654\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"MaxAmplitude\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"8939042d-00f8-4bd4-9ae5-659b86f73dc5\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Sensitivity\",\r\n      \"type\": \"float\",\r\n      \"value\": 12.0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5f945232-ee56-4246-b40f-d022ae87fda3\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"NumOfParticle\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 50000\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"b6fac5d3-095d-401e-953f-a989efd41656\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ColorSpeed\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 0.1\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"df18ce00-c09d-48f4-a191-1926b9e428d9\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Saturation\",\r\n      \"type\": \"float\",\r\n      \"value\": 1.0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"82683310-7e0b-4995-b99c-f8f214548ed7\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"Brightness\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 25.0\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"97fbc548-c65f-4fe4-a680-49b6b1633775\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"MinSize\",\r\n      \"type\": \"float\",\r\n      \"value\": 0.5\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"ca53ba52-122a-4d64-8ed6-c05ad7632023\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"MaxSize\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"d1638e6d-c2c7-4810-8946-0661f9af4134\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"MinAmplitude\",\r\n      \"type\": \"float\",\r\n      \"value\":
+    0.8\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"96e24794-d30c-4ca6-98a2-2f420d6ec654\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"MaxAmplitude\",\r\n      \"type\": \"float\",\r\n     
+    \"value\": 1.2\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"8939042d-00f8-4bd4-9ae5-659b86f73dc5\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"Sensitivity\",\r\n      \"type\": \"float\",\r\n      \"value\": 12.0\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"5f945232-ee56-4246-b40f-d022ae87fda3\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"NumOfParticle\",\r\n      \"type\": \"int\",\r\n     
+    \"value\": 50000\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"0fd6e4e0-4828-4380-90de-075f94249e61\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"1e2b676c-afb4-4670-bcab-1381802f68d7\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2022-11-04T14:44:40Z\",\r\n    \"updatedAt\":
+    \"2022-11-04T14:44:40Z\"\r\n  }\r\n]"
